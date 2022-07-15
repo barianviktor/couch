@@ -1,0 +1,43 @@
+GET / //////
+  movie /
+  { movie_id } /
+  images;
+
+GET / ///////
+  movie /
+  { movie_id } /
+  similar;
+
+GET / ////////
+  movie /
+  { movie_id } /
+  credits;
+
+GET / ////////
+  tv /
+  { tv_id } /
+  credits;
+
+GET / /////////
+  tv /
+  { tv_id } /
+  episode_groups;
+
+GET / /////////
+  tv /
+  { tv_id } /
+  external_ids;
+
+GET //////////
+/ tv / { tv_id } / images;
+
+GET ///////////
+/ tv / { tv_id } / similar;
+
+GET / collection / { collection_id };
+
+GET / genre / movie / list;
+
+GET / genre / tv / list;
+
+GET / trending / { media_type } / { time_window };
